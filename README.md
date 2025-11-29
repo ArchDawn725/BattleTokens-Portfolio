@@ -12,7 +12,7 @@
 
 Battle Tokens is my most recent release and the clearest example of my current engineering standards, coding style, and development philosophy. Released on October 9th, 2025, this 2D turn-based multiplayer tactics game began as a personal idea created for my wedding—something I could use to play D&D-like combat with friends without needing to run a session. The concept grew far beyond its original scope and became a fully featured released product for both Steam and Mobile.
 
-This is the project that best showcases my modern programming level:
+## This is the project that best showcases my modern programming level:
 
 -Zero god scripts
 
@@ -28,15 +28,15 @@ This is the project that best showcases my modern programming level:
 
 -Production-quality multiplayer implementation
 
-The only remaining flaw is mild overuse of public variables in late-stage systems due to rapid feature expansion. Otherwise, Battle Tokens is the strongest representation of my current skill set.
+*The only remaining flaw is mild overuse of public variables in late-stage systems due to rapid feature expansion. Otherwise, Battle Tokens is the strongest representation of my current skill set.*
 
 # **🎮 Gameplay Summary**
 
 Battle Tokens captures the tabletop combat feel of D&D and other turn-based RPGs but delivers it in a lightweight, fast-paced digital form playable with up to 9 total players.
 
-### **Start Menu & Progression**
+## **Start Menu & Progression**
 
-The game opens with music composed by the same musician from Line Wars and transitions into a clean main menu allowing players to:
+### The game opens with music composed by the same musician from Line Wars and transitions into a clean main menu allowing players to:
 
 -Visit the DLC shop (mobile only, DLC on PC is obtained through the Steam page)
 
@@ -46,9 +46,9 @@ The game opens with music composed by the same musician from Line Wars and trans
 
 -Adjust settings (language, speed, volume, brightness, etc.)
 
-### **Multiplayer Lobby System**
+## **Multiplayer Lobby System**
 
-**Using Unity Netcode for GameObjects, Lobby, and Relay, players can:**
+### **Using Unity Netcode for GameObjects, Lobby, and Relay, players can:**
 
 -Browse open lobbies
 
@@ -64,11 +64,11 @@ The game opens with music composed by the same musician from Line Wars and trans
 
 -Privacy settings
 
-Inside the lobby, character classes appear around the table in a circular layout, and players select from base classes or DLC classes. The host can also assign classes to AI helpers.
+*Inside the lobby, character classes appear around the table in a circular layout, and players select from base classes or DLC classes. The host can also assign classes to AI helpers.*
 
-### **Upgrade Phase**
+## **Upgrade Phase**
 
-**Before each encounter:**
+### **Before each encounter:**
 
 -Players spend upgrade points equal to their class level
 
@@ -76,9 +76,9 @@ Inside the lobby, character classes appear around the table in a circular layout
 
 -Everyone upgrades simultaneously
 
-### **Combat Phase**
+## **Combat Phase**
 
-**Combat unfolds across two grids:**
+### **Combat unfolds across two grids:**
 
 -Ally grid (player placement)
 
@@ -92,11 +92,11 @@ Inside the lobby, character classes appear around the table in a circular layout
 
 -Enemies
 
-Each class has up to 5 unique abilities, with a wide variety of damage types, buffs, debuffs, crowd control, and targeting patterns. Position matters—tokens closer to the enemy are more likely to be targeted.
+*Each class has up to 5 unique abilities, with a wide variety of damage types, buffs, debuffs, crowd control, and targeting patterns. Position matters—tokens closer to the enemy are more likely to be targeted.*
 
-The combat loop progresses through multiple waves until the final boss fight, completing the quest.
+*The combat loop progresses through multiple waves until the final boss fight, completing the quest.*
 
-### **Content & Visuals**
+## **Content & Visuals**
 
 -~110+ unique character tokens and designs
 
@@ -136,11 +136,11 @@ The combat loop progresses through multiple waves until the final boss fight, co
 
 Battle Tokens is my most modern codebase and demonstrates:
 
-*✔ Clean Single-Purpose Script Architecture*
+### *✔ Clean Single-Purpose Script Architecture*
 
 Every class has a focused responsibility. No script performs multiple unrelated tasks.
 
-**✔ Async-Based Turn System**
+### **✔ Async-Based Turn System**
 
 -Turns flow smoothly using async/await:
 
@@ -152,7 +152,7 @@ Every class has a focused responsibility. No script performs multiple unrelated 
 
 -Makes the turn order extremely clear and maintainable
 
-**✔ Modular Character & Ability Framework**
+### **✔ Modular Character & Ability Framework**
 
 -Classes are built using:
 
@@ -164,7 +164,7 @@ Every class has a focused responsibility. No script performs multiple unrelated 
 
 -Flexible stat systems
 
-**✔ Fully Networked Architecture**
+### **✔ Fully Networked Architecture**
 
 -Uses Unity NGO (Netcode for GameObjects) along with:
 
@@ -176,7 +176,7 @@ Every class has a focused responsibility. No script performs multiple unrelated 
 
 -Syncing turn states, actions, and abilities
 
-**✔ Expanded Coding Standards**
+### **✔ Expanded Coding Standards**
 
 -Consistent naming
 
@@ -190,9 +190,9 @@ Every class has a focused responsibility. No script performs multiple unrelated 
 
 -Script decomposition during late development
 
-**✔ Very Maintainable Codebase**
+### **✔ Very Maintainable Codebase**
 
-Battle Tokens is your most industry-aligned repository in terms of:
+Battle Tokens is my most industry-aligned repository in terms of:
 
 -Structure
 
@@ -268,9 +268,7 @@ SaveManager (player data)
 
 # **🧪 Development Notes**
 
-*Post-Launch Support*
-
-After launch, the game received:
+## After launch, the game received:
 
 -Multiple patches
 
@@ -284,7 +282,7 @@ After launch, the game received:
 
 -Expanded character classes
 
-**Scaling & Performance**
+## **Scaling & Performance**
 
 -Designed for mobile first
 
@@ -296,7 +294,7 @@ After launch, the game received:
 
 -Clean networking reduces desync issues
 
-**User Experience**
+## **User Experience**
 
 -New players quickly understood the loop
 
@@ -306,7 +304,7 @@ After launch, the game received:
 
 # **🚧 Why This Project Matters**
 
-Battle Tokens is the best demonstration of my 2025-level programming quality. It shows:
+### Battle Tokens is the best demonstration of my 2025-level programming quality. It shows:
 
 -Mastery of Unity’s modern networking stack
 
@@ -342,20 +340,20 @@ Battle Tokens is the best demonstration of my 2025-level programming quality. It
 
 # **🛠️ Tech Stack**
 
--Unity 6000.2.7f2
+Unity 6000.2.7f2
 
--C#
+C#
 
--Async/await architecture
+Async/await architecture
 
--Unity Netcode for GameObjects (NGO)
+Unity Netcode for GameObjects (NGO)
 
--Lobby & Relay
+Lobby & Relay
 
--2D sprite-based rendering
+2D sprite-based rendering
 
--Google Play + Steam release pipelines
+Google Play + Steam release pipelines
 
--ScriptableObject data containers
+ScriptableObject data containers
 
--Custom audio + visual assets
+Custom audio + visual assets
