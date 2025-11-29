@@ -4,9 +4,9 @@
 
 Turn-Based Multiplayer Strategy • Mobile + Steam • Free to Play
 
-Steam Page
+Steam Page: https://store.steampowered.com/app/3585790/Battle_Tokens/
 
-Google Play
+Google Play: https://play.google.com/store/apps/details?id=com.archdawn.battletokens&pcampaignid=web_share
 
 Availability: Free to Play (Optional DLC)
 
