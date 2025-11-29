@@ -1,216 +1,212 @@
-# BattleTokens-Portfolio
+# **Battle Tokens (2025)**
 
-***Battle Tokens (2025)***
+**Turn-Based Multiplayer Strategy • Mobile + Steam • Free to Play**
 
-Turn-Based Multiplayer Strategy • Mobile + Steam • Free to Play
+*Steam Page:* https://store.steampowered.com/app/3585790/Battle_Tokens/
 
-Steam Page: https://store.steampowered.com/app/3585790/Battle_Tokens/
+*Google Play:* https://play.google.com/store/apps/details?id=com.archdawn.battletokens&pcampaignid=web_share
 
-Google Play: https://play.google.com/store/apps/details?id=com.archdawn.battletokens&pcampaignid=web_share
+*Availability:* Free to Play (Optional DLC)
 
-Availability: Free to Play (Optional DLC)
-
-**⭐ Project Overview**
+# **⭐ Project Overview**
 
 Battle Tokens is my most recent release and the clearest example of my current engineering standards, coding style, and development philosophy. Released on October 9th, 2025, this 2D turn-based multiplayer tactics game began as a personal idea created for my wedding—something I could use to play D&D-like combat with friends without needing to run a session. The concept grew far beyond its original scope and became a fully featured released product for both Steam and Mobile.
 
 This is the project that best showcases my modern programming level:
 
-Zero god scripts
+-Zero god scripts
 
-Strict separation of responsibilities
+-Strict separation of responsibilities
 
-Single-purpose scripts and clean modularity
+-Single-purpose scripts and clean modularity
 
-Async-based turn flow
+-Async-based turn flow
 
-High readability and consistency
+-High readability and consistency
 
-Clear architecture and maintainability
+-Clear architecture and maintainability
 
-Production-quality multiplayer implementation
+-Production-quality multiplayer implementation
 
 The only remaining flaw is mild overuse of public variables in late-stage systems due to rapid feature expansion. Otherwise, Battle Tokens is the strongest representation of my current skill set.
 
-**🎮 Gameplay Summary**
+# **🎮 Gameplay Summary**
 
 Battle Tokens captures the tabletop combat feel of D&D and other turn-based RPGs but delivers it in a lightweight, fast-paced digital form playable with up to 9 total players.
 
-*Start Menu & Progression*
+### **Start Menu & Progression**
 
 The game opens with music composed by the same musician from Line Wars and transitions into a clean main menu allowing players to:
 
-Visit the DLC shop (mobile only)
+-Visit the DLC shop (mobile only, DLC on PC is obtained through the Steam page)
 
-Buy items with in-game gold
+-Buy items with in-game gold
 
-Change player name
+-Change player name
 
-Adjust settings (language, speed, volume, brightness, etc.)
+-Adjust settings (language, speed, volume, brightness, etc.)
 
-*Multiplayer Lobby System*
+### **Multiplayer Lobby System**
 
-Using Unity Netcode for GameObjects, Lobby, and Relay, players can:
+**Using Unity Netcode for GameObjects, Lobby, and Relay, players can:**
 
-Browse open lobbies
+-Browse open lobbies
 
-Create private/public lobbies
+-Create private/public lobbies
 
-Set:
+**Set:**
 
-Player count
+-Player count
 
-Number of AI helpers
+-Number of AI helpers
 
-Quest selection
+-Quest selection
 
-Privacy settings
+-Privacy settings
 
 Inside the lobby, character classes appear around the table in a circular layout, and players select from base classes or DLC classes. The host can also assign classes to AI helpers.
 
-*Upgrade Phase*
+### **Upgrade Phase**
 
-Before each encounter:
+**Before each encounter:**
 
-Players spend upgrade points equal to their class level
+-Players spend upgrade points equal to their class level
 
-Points can unlock new abilities or boost core stats
+-Points can unlock new abilities or boost core stats
 
-Everyone upgrades simultaneously
+-Everyone upgrades simultaneously
 
-*Combat Phase*
+### **Combat Phase**
 
-Combat unfolds across two grids:
+**Combat unfolds across two grids:**
 
-Ally grid (player placement)
+-Ally grid (player placement)
 
-Enemy grid (enemy placement)
+-Enemy grid (enemy placement)
 
-Turn order cycles through:
+**Turn order cycles through:**
 
-Players
+-Players
 
-AI allies
+-AI allies
 
-Enemies
+-Enemies
 
 Each class has up to 5 unique abilities, with a wide variety of damage types, buffs, debuffs, crowd control, and targeting patterns. Position matters—tokens closer to the enemy are more likely to be targeted.
 
 The combat loop progresses through multiple waves until the final boss fight, completing the quest.
 
-*Content & Visuals*
+### **Content & Visuals**
 
-~110+ unique character tokens and designs
+-~110+ unique character tokens and designs
 
-Cartoon-inspired clean visual style
+-Cartoon-inspired clean visual style
 
-Mix of personal artwork and contracted 2D art
+-Mix of personal artwork and contracted 2D art
 
-Smooth UI animations and polished presentation
+-Smooth UI animations and polished presentation
 
-**🧩 Key Features**
+# **🧩 Key Features**
 
-Fully multiplayer turn-based combat (up to 9 players)
+-Fully multiplayer turn-based combat (up to 9 players)
 
-Cross-platform: Steam + Android
+-Cross-platform: Steam + Android
 
-Free-to-play
+-Free-to-play
 
-Clean async-based turn sequencing
+-Clean async-based turn sequencing
 
-Multiple quests and difficulty curves
+-Multiple quests and difficulty curves
 
-Fast-paced but deeply tactical combat
+-Fast-paced but deeply tactical combat
 
-110+ token designs and ability variations
+-110+ token designs and ability variations
 
-Polished UI and responsive menus
+-Polished UI and responsive menus
 
-DLC support (mobile)
+-DLC support
 
-AI helper characters with dynamic logic
+-AI helper characters with dynamic logic
 
-P2P multiplayer via Unity Relay
+-P2P multiplayer via Unity Relay
 
-Frequent post-launch updates, patches, and additions
+-Frequent post-launch updates, patches, and additions
 
-**🏗️ Architecture Overview**
+# **🏗️ Architecture Overview**
 
-Battle Tokens is your most modern codebase and demonstrates:
+Battle Tokens is my most modern codebase and demonstrates:
 
 *✔ Clean Single-Purpose Script Architecture*
 
 Every class has a focused responsibility. No script performs multiple unrelated tasks.
 
-*✔ Async-Based Turn System*
+**✔ Async-Based Turn System**
 
-Turns flow smoothly using async/await:
+-Turns flow smoothly using async/await:
 
-Reduces complexity
+-Reduces complexity
 
-Prevents nested coroutine chains
+-Prevents nested coroutine chains
 
-Eliminates frame delay issues
+-Eliminates frame delay issues
 
-Makes the turn order extremely clear and maintainable
+-Makes the turn order extremely clear and maintainable
 
-*✔ Modular Character & Ability Framework*
+**✔ Modular Character & Ability Framework**
 
-Classes are built using:
+-Classes are built using:
 
-Base class templates
+-Base class templates
 
-Modular ability definitions
+-Modular ability definitions
 
-Data-driven targeting rules
+-Data-driven targeting rules
 
-Flexible stat systems
+-Flexible stat systems
 
-*✔ Fully Networked Architecture*
+**✔ Fully Networked Architecture**
 
-Uses Unity NGO (Netcode for GameObjects) along with:
+-Uses Unity NGO (Netcode for GameObjects) along with:
 
-Lobby service
+-Lobby service
 
-Relay service
+-Relay service
 
-Host migration handling
+-Host migration handling
 
-Syncing turn states, actions, and abilities
+-Syncing turn states, actions, and abilities
 
-*✔ Expanded Coding Standards*
+**✔ Expanded Coding Standards**
 
-Consistent naming
+-Consistent naming
 
-Reusable utilities
+-Reusable utilities
 
-Clean UI separation
+-Clean UI separation
 
-Virtually no Update() spam
+-Virtually no Update() spam
 
-Event-driven and async-driven patterns
+-Event-driven and async-driven patterns
 
-Script decomposition during late development
+-Script decomposition during late development
 
-*✔ Very Maintainable Codebase*
+**✔ Very Maintainable Codebase**
 
 Battle Tokens is your most industry-aligned repository in terms of:
 
-Structure
+-Structure
 
-Readability
+-Readability
 
-Modularity
+-Modularity
 
-Networking discipline
+-Networking discipline
 
-Feature scalability
+-Feature scalability
 
-**🗂️ Key Scripts to Review**
+# **🗂️ Key Scripts to Review**
 
-(Filenames can be matched once the repo is uploaded.)
-
-*Core*
+### **Core**
 
 TurnFlowController (async)
 
@@ -218,7 +214,7 @@ GameStateManager
 
 LobbyManager / NetworkManager
 
-*Combat*
+### **Combat**
 
 AbilityExecutor
 
@@ -230,7 +226,7 @@ DamageResolver
 
 StatSystem
 
-*UI*
+### **UI**
 
 LobbyUIController
 
@@ -242,7 +238,7 @@ SettingsUI
 
 ShopUI / DLCUI
 
-*Systems*
+### **Systems**
 
 QuestSystem
 
@@ -252,7 +248,7 @@ AICompanionController
 
 EnemyBehaviorSystem
 
-*Networking*
+### **Networking**
 
 MultiplayerActionsRelay
 
@@ -260,7 +256,7 @@ PlayerSyncManager
 
 TokenSyncController
 
-*Utilities*
+### **Utilities**
 
 AsyncUtilities
 
@@ -270,97 +266,96 @@ LocalizationSystem
 
 SaveManager (player data)
 
-**🧪 Development Notes**
+# **🧪 Development Notes**
+
 *Post-Launch Support*
 
 After launch, the game received:
 
-Multiple patches
+-Multiple patches
 
-New free content
+-New free content
 
-A full DLC pack
+-A full DLC pack
 
-UI improvements
+-UI improvements
 
-Bug fixes
+-Bug fixes
 
-Expanded character classes
+-Expanded character classes
 
-*Scaling & Performance*
+**Scaling & Performance**
 
-Designed for mobile first
+-Designed for mobile first
 
-Minimal memory footprint
+-Minimal memory footprint
 
-Lightweight 2D assets
+-Lightweight 2D assets
 
-Async turn flow prevents frame spikes
+-Async turn flow prevents frame spikes
 
-Clean networking reduces desync issues
+-Clean networking reduces desync issues
 
-*User Experience*
+**User Experience**
 
-New players quickly understood the loop
+-New players quickly understood the loop
 
-Fast, satisfying tactical turns
+-Fast, satisfying tactical turns
 
-Mobile-friendly interactions
+-Mobile-friendly interactions
 
-**🚧 Why This Project Matters**
+# **🚧 Why This Project Matters**
 
-Battle Tokens is the best demonstration of your 2025-level programming quality. It shows:
+Battle Tokens is the best demonstration of my 2025-level programming quality. It shows:
 
-Mastery of Unity’s modern networking stack
+-Mastery of Unity’s modern networking stack
 
-Fully async game flow
+-Fully async game flow
 
-Strict architecture and modularity
+-Strict architecture and modularity
 
-Professional delivery on Steam & Mobile
+-Professional delivery on Steam & Mobile
 
-Clean code suitable for mid/senior-level review
+-Clean code suitable for mid/senior-level review
 
-A full product lifecycle (development → polish → release → updates)
+-A full product lifecycle (development → polish → release → updates)
 
-Production-ready UI and UX
+-Production-ready UI and UX
 
-Strongest example of system scalability and maintainability
+-Strongest example of system scalability and maintainability
 
-Ability to integrate store systems, P2P multiplayer, DLC features, and more
+-Ability to integrate store systems, P2P multiplayer, DLC features, and more
 
-Among all your projects, this is the one that a studio like Ludeon (or any senior-level Unity employer) should review first.
+# **📚 Lessons Learned**
 
-**📚 Lessons Learned**
+-Strict modularity pays off massively in later development
 
-Strict modularity pays off massively in later development
+-Async solves many turn-flow and timing issues
 
-Async solves many turn-flow and timing issues
+-Networking must be designed early to avoid rewrites
 
-Networking must be designed early to avoid rewrites
+-Public variables should be minimized in future work
 
-Public variables should be minimized in future work
+-Mixing mobile-first & PC-first design requires careful UI planning
 
-Mixing mobile-first & PC-first design requires careful UI planning
+-Maintaining clean architecture speeds up post-launch support
 
-Maintaining clean architecture speeds up post-launch support
+# **🛠️ Tech Stack**
 
-**🛠️ Tech Stack**
+-Unity 6000.2.7f2
 
-Unity 6.xx
+-C#
 
-C#
+-Async/await architecture
 
-Async/await architecture
+-Unity Netcode for GameObjects (NGO)
 
-Unity Netcode for GameObjects (NGO)
+-Lobby & Relay
 
-Lobby & Relay
+-2D sprite-based rendering
 
-2D sprite-based rendering
+-Google Play + Steam release pipelines
 
-Google Play + Steam release pipelines
+-ScriptableObject data containers
 
-ScriptableObject data containers
-
-Custom audio + visual assets
+-Custom audio + visual assets
