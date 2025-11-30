@@ -206,65 +206,69 @@ Battle Tokens is my most industry-aligned repository in terms of:
 
 # **🗂️ Key Scripts to Review**
 
-### **Core**
+## **Core**
 
-TurnFlowController (async)
+*TurnHandler.cs*
 
-GameStateManager
+## **Combat**
 
-LobbyManager / NetworkManager
+*EnemyAI.cs*
 
-### **Combat**
+*EnemyPointsController.cs*
 
-AbilityExecutor
+*EnemyCharacter.cs*
 
-TargetingSystem
+*TargetSelectionService.cs*
 
-GridPlacementController
+*AttackResolver.cs*
 
-DamageResolver
+*CharacterCombat.cs*
 
-StatSystem
+*ActionButton.cs*
 
-### **UI**
+*Character.cs*
 
-LobbyUIController
+## **UI**
 
-UpgradeMenuController
+*ScrollableGridLayout.cs*
 
-BattleUIController
+*RewardUIController.cs*
 
-SettingsUI
+*AnchorGridLayout.cs*
 
-ShopUI / DLCUI
+*SplitClickInvoker.cs*
 
-### **Systems**
+*UINavigationController.cs*
 
-QuestSystem
+*TurnTimerUIController.cs*
 
-WaveSystem
+*UIController.cs*
 
-AICompanionController
+*LoadoutUIController.cs*
 
-EnemyBehaviorSystem
+*BattleHUDController.cs*
 
-### **Networking**
+## **Systems**
 
-MultiplayerActionsRelay
+*GridManager.cs*
 
-PlayerSyncManager
+*SpawnManager.cs*
 
-TokenSyncController
+*EnemyController.cs*
 
-### **Utilities**
+## **Networking**
 
-AsyncUtilities
+*LobbyUpdateThrottler.cs*
 
-AudioManager
+*PlayerReadyManager.cs*
 
-LocalizationSystem
+*Lobby.cs*
 
-SaveManager (player data)
+## **Utilities**
+
+*ActionEffects.cs*
+
+*CharacterStats.cs*
 
 # **🧪 Development Notes**
 
